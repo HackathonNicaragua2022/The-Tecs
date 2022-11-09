@@ -94,7 +94,7 @@
 .menu-horizontal > li > a{
 	display: block;
 	padding: 15px 20px;
-	color: #000;;
+	color: #000;
 	text-decoration: none;
 }
 .menu-horizontal > li:hover{
@@ -212,12 +212,29 @@
 /*sliider automatico*/
 .carousel-inner{
     margin: 30px;
-    border-radius: 30px;
 }
+.dess{
+    background-color: rgb(245, 245, 245,0.7);
+    border-radius: 60px;
+
+    padding: 5px;
+}
+.carousel-control-prev:hover{
+    background-color: #f5f5f5;   
+}
+.carousel-control-next:hover{
+    background-color: #f5f5f5;
+}
+
 .nombre_de_las_img--carrusel{
     font-size: 2rem;
     font-family: 'Lato';
     color: #f5f5f5;
+}
+.nombre_de_las_img--carrusel:hover{
+    background-color: rgb(4, 104, 191,0.7);
+    border-radius: 20px;
+    padding: 5px;
 }
 .about{
     min-height:400px ;
@@ -253,13 +270,15 @@
 .about__paragraph{
     margin-bottom: 20px;
     line-height: 1.5;
-    font-weight: 300;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #f5f5f5;
 }
 
 /*acordion*/
-.accordion{
-   color:#0468BF;
+
+.accordion-body{
+    background-color: rgb(88, 85, 85, 0.4);
 }
 
 /*projects*/
@@ -275,8 +294,8 @@
     "img1 img1 img4 img5"
     "img6 img6 img7 img8"
     "img6 img6 img7 img8";
-    gap: 10px;
-    border: 10px solid #F25C05;
+    gap: 5px;
+    
  } 
  .projects__item{
     position: relative;
@@ -290,6 +309,7 @@
     height: 100%;
     object-fit: cover;
     cursor: pointer;
+    border: 10px solid #0468BF;
  }
  .projects__item:nth-of-type(1){
     grid-area: img1;
@@ -329,6 +349,7 @@
     justify-content: center;
     transform: translateX(100%);
     cursor: pointer;
+    transition-timing-function: ease-in-out;
  }
  .projects__item:hover .projects__hover{
     transform: translateX(0%);
@@ -352,11 +373,17 @@
     padding: 30px 25px;
     color: #fff;
     margin-bottom: 50px;
+    border: 5px #000;
  }
  .testimony__person{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+ }
+ .icons_workers{
+    display:flex;
+    justify-content: center;
+    align-items: center;
  }
  .testimony__img{
     width: 100px;
@@ -368,6 +395,7 @@
     border: 5px solid white;
     margin-right: 30px;
 }
+
 .testimony__name{
     font-size: 1.8rem;
     margin-bottom: 10px;
@@ -378,9 +406,22 @@
     font-size: 1.3rem;
 }
 .testimony__review{
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'Lato';
 }
+.email{
+    text-align: right;
+    color: #000;
+}
+.material-symbols-rounded{
+   
+    font-variation-settings:
+  'FILL' 3,
+  'wght' 900,
+  'GRAD' 400,
+  'opsz' 50
+}
+
 /*footer*/
 .footer{
     background: #F25C05;  /* fallback for old browsers */
@@ -429,7 +470,7 @@
     background-color: #4a4a4a;
 }
 .referencia{
-    background-color: #f5f5f5 10px;
+   
     text-align: center ;
     color: black;
     font-family: 'Lato';
@@ -476,7 +517,16 @@
     }
 }
 
-/*estilos de la paginas de galeria.html*/
+/*estilos de la paginas de acerca_de_  todos los municpios*/
+
+
+.Maps:hover{
+    background-color: #cecece;
+    border-radius: 30%;
+  
+}
+
+                /*diriamba*/
 
 .contenedor{
     width: 90% ;
@@ -492,6 +542,7 @@
 .Galery__title{
     font-family: 'Lobster', cursive;
     font-weight: 900;
+    border-radius: 60px;
     color: black;
     margin: 10%;
     padding: 30px;
@@ -506,12 +557,14 @@
     font-family: 'Lato';
     font-weight: 600;
     font-size: 1.5rem;  background-color: rgb(255, 255, 255, 0.5);
-    border-radius: 50px;
+    border-radius: 70px;
     padding: 20px;
+    gap: 5px;
 }
 .infoo.contenedor{
     font-family: 'Lobster', cursive ;
     font-size: 2.5rem;
+    gap: 10px;
 
 }
 .encabezado{ 
@@ -520,9 +573,69 @@
     height: 500px;
     background-image: url(../IMAGENES/panoramaDeDiriamba.jpg);
     clip-path: circle(50% at 50% 50%);
-   
     background-position: center;
-    background-size: cover;
-  
- 
+    background-size: cover
+}
+/*Dolores*/
+.encabezado.Dolores{
+    background-image: url(../IMAGENES/iglesia_dolores.png);
+}
+.Galery__title.Dolores{
+    color: black;
+    background-color: rgb(255, 255, 255 ,0.7);
+}
+.cuerpo_de_galeria{
+    background:#fff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fff,rgb(4, 104, 191, 0.6));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,#fff,rgb(4, 104, 191, 0.6)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+
+            /*san Marcos*/
+.encabezado.San_Marcos{
+    background-image: url(../IMAGENES/parque_san-marcos.jpg);
+}
+.Galery__title.San_Marcos{
+    color: black;
+    background-color: rgb(255, 255, 255 ,0.7);
+}
+        /*Jinotepe*/
+.encabezado.Jinotepe{
+    background-image: url(../IMAGENES/panorama\ de\ jinotepe.webp);
+}
+.Galery__title.Jinotepe{
+    color: black;
+    background-color: rgb(255, 255, 255 ,0.7);
+}
+        /* La paz*/
+.encabezado.La_Paz{
+    background-image: url(../IMAGENES/la-paz-carazo-aniversario...jpg);
+}
+.Galery__title.La_Paz{
+    background-color:  rgb(255, 255, 255 ,0.7);
+    text-align: center;
+}
+        /*El rosario*/
+.encabezado.El_Rosario{
+    background-image: url(../IMAGENES/Entrada-del-Rosario-800x600.jpeg);
+}
+.Galery__title.El_Rosario{
+    background-color:  rgb(255, 255, 255 ,0.7);
+    text-align: center;
+}
+/* santa tereza*/
+.encabezado.santa_tereza{
+    background-image: url(../IMAGENES/Chacocente-Carazo.jpg);
+}
+.Galery__title.santa_tereza{
+    background-color:  rgb(255, 255, 255 ,0.7);
+    text-align: center;
+}
+/*La Conquista*/
+.encabezado.la_conquista{
+    background-image: url(../IMAGENES/Santuario-Nuestro-Senor-de-Esquipulas-600x467.jpg);
+}
+.Galery__title.la_conquista{
+    background-color:  rgb(255, 255, 255 ,0.7);
+    text-align: center;
+    justify-content: flex-end;
 }

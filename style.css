@@ -1,39 +1,65 @@
-@font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?q7ku32');
-  src:  url('fonts/icomoon.eot?q7ku32#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?q7ku32') format('truetype'),
-    url('fonts/icomoon.woff?q7ku32') format('woff'),
-    url('fonts/icomoon.svg?q7ku32#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {
+  background-image: url('fondo.jpg');
 }
 
-.icon-facebook2:before {
-  content: "\ea91";
+.form-register {
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
 }
-.icon-instagram:before {
-  content: "\ea92";
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
 }
-.icon-whatsapp:before {
-  content: "\ea93";
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
 }
-.icon-twitter:before {
-  content: "\ea96";
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
 }
