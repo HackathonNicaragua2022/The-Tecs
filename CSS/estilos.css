@@ -11,6 +11,7 @@
     --color-tercero: #025E73;
     --color-cuatro: #f29F05;
     --color-cinco: #F25C05;
+    --color-seis:#585555;
     
     --boton-padding:20px 40px; 
     font-family: 'Lato', sans-serif;
@@ -18,8 +19,8 @@
 }
 .cuerpo{
     background:#72C1F2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgb(4, 104, 191, 0.9), rgb(114, 193, 242, 0.9)), url("../IMAGENES/THE\ TECS\ .png");  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right,rgb(4, 104, 191, 0.9),rgb(114, 193, 242, 0.9)), url("../IMAGENES/THE\ TECS\ .png"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, rgb(4, 104, 191, 0.9), rgb(114, 193, 242, 0.9));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,rgb(4, 104, 191, 0.9),rgb(114, 193, 242, 0.9)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
 
@@ -43,8 +44,8 @@
     background:#72C1F2;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right,rgb(242, 159, 5, 0.9),rgb(114, 193, 242, 0.9)), url("../IMAGENES/El-Gueguense-6-600x400.webp");  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, rgb(242, 159, 5, 0.9),rgb(114, 193, 242, 0.9)), url("../IMAGENES/El-Gueguense-6-600x400.webp"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
-   /* background-image: url('../IMAGENES/El-Gueguense-6-600x400.webp');*/
+   /* clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);*/
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
     background-repeat: no-repeat;
     background-size: cover;
   
@@ -105,13 +106,13 @@
 	display: none;
 	list-style: none;
 	width: 200px;
-	background-color: rgb(242, 159, 5, 0.5);
+	background-color: #585555;
 }
 .menu-horizontal li:hover .menu-vertical{
 	display: block;
 }
 .menu-vertical li:hover{
-	background-color: #585555;
+	background-color: black;
 }
 
 .menu-vertical li a{
@@ -210,9 +211,7 @@
     cursor: pointer;
 }
 /*sliider automatico*/
-.carousel-inner{
-    margin: 30px;
-}
+
 .dess{
     background-color: rgb(245, 245, 245,0.7);
     border-radius: 60px;
@@ -378,7 +377,7 @@
  .testimony__person{
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
  }
  .icons_workers{
     display:flex;
@@ -392,7 +391,7 @@
     object-fit: cover;
     object-position: top;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 3px solid white;
     margin-right: 30px;
 }
 
@@ -460,7 +459,9 @@
     font-size: 30px;
     text-decoration: none;
 }
-
+.footer__icons.Instagram:hover{
+  color: #0468BF;
+}
 .fa.footer__icons{
     line-height: 60px;
 }
@@ -477,17 +478,27 @@
     font-weight: 600;
     
 }
-
-@media screen and (max-width:500px) {
+@media screen and (max-width:800px) {
     :root{
         --boton-padding:18px 40px;
     }    
     .nav{
         justify-content: space-around;
     }
+    .cuerpo{
+       height: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .menu-vertical{
+        font-size: 0.7rem;
+    }
+    .desplegables{
+        font-size: 1rem;
+    }
     .nav__items{
         font-weight: 400;
-        border-bottom: 4px solid #F25C05;
         margin-right: 0;
         border-radius:30px;
     }
@@ -514,6 +525,84 @@
     }
     .testimomy.container{
         text-align: center;
+    }
+    .footer__title{
+        font-size: 1.2rem;
+    }
+    
+    .nav__items--footer{
+        margin: 7px;
+        font-size: 0.7rem;
+    }
+    .testimomy__grid{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    :root{
+        --boton-padding:18px 40px;
+    }    
+    
+    .nav{
+        justify-content: space-around;
+    }
+    .cuerpo{
+       height: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .desplegables{
+        font-size: 1rem;
+    }
+    .nav__items{
+        font-weight: 400;
+        margin-right: 0;
+        border-radius:30px;
+    }
+    .nav__items--cta{
+       background-color: #fff;
+    }
+    .nav__items--footer{
+        border: none;
+    }
+    .hero__texts{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .hero__title{
+        font-size: 2.5rem;
+    }
+    .hero__subtitle{
+        font-size: 1.5rem ;
+        
+    }
+    .carousel{
+        margin: 30px;
+        text-align: center;
+    }
+    .testimomy.container{
+        text-align: center;
+    }
+    .footer__title{
+        font-size: 1.2rem;
+    }
+    
+    .nav__items--footer{
+        margin: 5px;
+        font-size: 0.7rem;
+    }
+
+    /*redirecciones*/
+
+    .Galery__title{
+        text-align: end;
+        margin: 50px;
+    }    
+    .form-register{
+       padding-right: 60px ;
     }
 }
 

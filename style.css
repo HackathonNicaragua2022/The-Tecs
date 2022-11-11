@@ -5,7 +5,10 @@
 }
 
 body {
-  background-image: url('fondo.jpg');
+  background:#72C1F2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fff, rgba(115, 193, 242, 0.9)), url("../IMAGENES/THE\ TECS\ .png");  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,#fff,rgb(114, 193, 242, 0.9)), url("../IMAGENES/THE\ TECS\ .png"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 .form-register {
